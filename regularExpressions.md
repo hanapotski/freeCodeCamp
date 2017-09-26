@@ -33,3 +33,11 @@
 * The whitespace regular expression looks like this:
 
     /\s+/g
+
+### Inverting Regular Expression Matches with JavaScript
+* You can invert any match by using the uppercase version of the regular expression selector.
+
+* For example, \s will match any whitespace, and \S will match anything that isn't whitespace.
+
+* To count the number of non-whitespace characters in testString:
+    /\S/g
