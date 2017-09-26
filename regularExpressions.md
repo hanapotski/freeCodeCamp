@@ -1,4 +1,4 @@
-# Regular Expressions
+# Regular Expressions - https://github.com/hanapotski/learn-regex
 * Regular expressions are used to find certain words or patterns inside of strings.
 
 ### Finding the word "the" in the string "The dog chased the cat"
