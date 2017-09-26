@@ -24,3 +24,12 @@
 * Appending a plus sign (+) after the selector, e.g. /\d+/g, allows this regular expression to match one or more digits.
 
 * The trailing g is short for 'global', which allows this regular expression to find all matches rather than stop at the first match.
+
+### Finding Whitespace with Regular Expressions
+* We can also use regular expression selectors like \s to find whitespace in a string.
+
+* The whitespace characters are " " (space), \r (the carriage return), \n (newline), \t (tab), and \f (the form feed).
+
+* The whitespace regular expression looks like this:
+
+    /\s+/g
