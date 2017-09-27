@@ -24,3 +24,17 @@ json.forEach(function(val) {
 
 #### Render Images from Data Sources
 html += "<img src = '" + val.imageLink + "' " + "alt='" + val.altText + "'>";
+
+
+#### Prefilter JSON
+json = json.filter(function(val) {
+  return (val.id !== 1);
+});
+
+
+#### Get Geolocation Data
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    $("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
+  });
+}
