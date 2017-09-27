@@ -6,7 +6,21 @@
 * JSON is nothing more than object properties and their current values, sandwiched between a { and a }.
 * These properties and their values are often referred to as "key-value pairs".
 
-
+#### Get JSON with the jQuery getJSON Method
 $.getJSON("/json/cats.json", function(json) {
         $(".message").html(JSON.stringify(json));
       });
+
+#### Convert JSON Data to HTML
+json.forEach(function(val) {
+  var keys = Object.keys(val);
+  html += "<div class = 'cat'>";
+  keys.forEach(function(key) {
+    html += "<strong>" + key + "</strong>: " + val[key] + "<br>";
+  });
+  html += "</div><br>";
+});
+
+
+#### Render Images from Data Sources
+html += "<img src = '" + val.imageLink + "' " + "alt='" + val.altText + "'>";
