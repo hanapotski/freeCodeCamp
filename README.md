@@ -1,1 +1,2 @@
-# freeCodeCamp
+# FreeCodeCamp
+My notes 
